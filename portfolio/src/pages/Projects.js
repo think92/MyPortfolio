@@ -43,7 +43,7 @@ const Projects = () => {
                     <p>관리자 페이지</p>
                 </div>
                 <div className="project-item">
-                <video width="240" height="120" controls>
+                <video loop muted width="240" height="120" controls>
                     <source src={require("./images/video.mp4")} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
