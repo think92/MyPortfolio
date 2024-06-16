@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #292c31;
+}
+.mypagebar {
+  position: absolute;
+  z-index: 3;
+  width: 295px;
+  height: 953px;
+  background-color: #292c31;
+}
+/* 메인홈 */
+.mypagegomain {
+  display: flex;
+  width: 295px;
+  height: 80px;
+  background-color: #494a4a;
+}
+.fahouse {
+  font-size: 25px;
+  color: #d1d1d1;
+  margin: 25px 0 0 25px;
+}
+.mypagegomainhome {
+  font-size: 20px;
+  color: #fff;
+  margin: 28px 0 0 15px;
+  text-decoration: none;
+}
+.mypageuser {
+  display: flex;
+  justify-content: center;
+}
+.mypageuserimg {
+  margin: 55px 0 30px 0;
+}
+.useremail {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  color: #fff;
+  margin: 0;
+}
+
+/* 작업내역 */
+.mypagetool {
+  display: flex;
+  width: 295px;
+  height: 80px;
+  background-color: #292c31;
+  margin-top: 50px;
+  border: none;
+  text-decoration: none;
+}
+.facircle {
+  font-size: 11px;
+  color: #fff;
+  margin: 35px 0 0 50px;
+}
+.mypagetools {
+  font-size: 20px;
+  color: #fff;
+  margin: 28px 0 0 15px;
+}
+/* 문의사항 */
+.mypagecustomer {
+  display: flex;
+  width: 295px;
+  height: 80px;
+  background-color: #292c31;
+  margin-top: 0;
+  border: none;
+  text-decoration: none;
+}
+.facirclewhite {
+  font-size: 11px;
+  color: #fff;
+  margin: 35px 0 0 50px;
+}
+.mypagecustomers {
+  font-size: 20px;
+  color: #fff;
+  margin: 28px 0 0 15px;
+}
+/* 결재내역 */
+.mypagepay {
+  display: flex;
+  width: 295px;
+  height: 80px;
+  background-color: #292c31;
+  margin-top: 0;
+  border: none;
+  text-decoration: none;
+}
+.facirclewhite {
+  font-size: 11px;
+  color: #fff;
+  margin: 35px 0 0 50px;
+}
+.mypagepays {
+  font-size: 20px;
+  color: #fff;
+  margin: 28px 0 0 15px;
+}
+/* 로그아웃 */
+.mypagegologout {
+  display: flex;
+  width: 295px;
+  height: 80px;
+  background-color: #494a4a;
+  margin: 315px 0 0 0;
+}
+.bracket {
+  font-size: 25px;
+  color: #d1d1d1;
+  margin: 25px 0 0 25px;
+}
+.mypagegologouts {
+  font-size: 20px;
+  color: #fff;
+  margin: 25px 0 0 25px;
+  text-decoration: none;
+}

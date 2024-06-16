@@ -1,0 +1,286 @@
+@font-face {
+    font-family: "Pretendard-Regular";
+    src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+      format("woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'LeferiPoint-BlackA';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-BlackA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  body {
+    box-sizing: border-box;
+    /* background-color: black; */
+  }
+  .body {
+    /* background-color: #292c31; */
+    margin-top: 60px; /* Header의 높이만큼 상단 여백 추가 */
+    font-family: "Pretendard-Regular";
+  }
+  
+  /* 이미지영상 업로드 화면 */
+  #upload {
+    display: flex;
+    align-items: center;
+  }
+  .uploadbackground1 {
+    width: 1500px;
+    height: 740px;
+    background-color: #b0e045;
+    margin: auto;
+    border-radius: 20px;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  .uploadbackground2 {
+    display: flex;
+    width: 1360px;
+    height: 620px;
+    background-color: white;
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 15px;
+  }
+  .uploadbackground2 .uploadtext {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+  }
+  .simbolrotation {
+    display: flex;
+    margin: 40px 0 0 45px;
+  }
+  .uploadtext .introsimbol {
+    width: 115px;
+    height: 115px;
+  }
+  .uploadtext h1 {
+    font-family: "LeferiPoint-BlackA";
+    font-size: 45px;
+    margin: 35px 0 18px 0;
+  }
+  .uploadtext p {
+    font-size: 27px;
+    font-weight: 600;
+    margin: 5px;
+  }
+  .uploadtext .uploadtextbtn {
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+    background-color: #9edf0c;
+    padding: 12px 22px;
+    margin: 0 0 150px 0;
+    border-radius: 10px;
+  }
+  .uploadbackground2 .uploadimg {
+    width: 44%;
+    margin: auto;
+  }
+  .uploadimg img {
+    width: 535px;
+    height: 380px;
+    border-radius: 18px;
+  }
+  
+  /* 블러블라 소개 -1 */
+  .intro01 {
+    display: flex;
+    background-color: #d4fe75;
+  }
+  #intro1 {
+    text-align: center;
+    font-size: 22px;
+    color: black;
+    margin: auto;
+    padding: 100px 0 200px 0;
+  }
+  .introtitle {
+    /* display: flex; */
+    font-family: 'LeferiPoint-BlackA';
+    font-size: 47px;
+  }
+  .graphic1{
+    display: flex;
+    position: absolute;
+    z-index: 3;
+    width: 125px;
+    height: 125px;
+    margin: 0 0 0 170px;
+  }
+  .graphic2{
+    display: flex;
+    position: absolute;
+    z-index: 3;
+    width: 125px;
+    height: 125px;
+    margin: 40px 0 0 1080px;
+  }
+  .introtextbox{
+    display: flex;
+  }
+  .intro1box {
+    text-align: center;
+    width: 360px;
+    height: 440px;
+    background-color: #fff;
+    border-radius: 35px;
+    border-width: 4px;
+    border-style:solid;
+    border-color: #282828;
+    margin: 30px 50px 40px 50px;
+    box-shadow: 6px 6px 3px #282828;
+  }
+  .iconbox {
+    display: flex;
+    width: 90px;
+    height: 90px;
+    background-color: #00a32e;
+    border-radius: 60px;
+    margin: 50px 0px 40px 130px;
+  }
+  .loadicon1 {
+    font-size: 32px;
+    color: white;
+    margin: 6px 0 0 26px;
+  }
+  .loadicon2 {
+    font-size: 32px;
+    color: white;
+    margin: 6px 0 0 30px;
+  }
+  .loadicon3 {
+    font-size: 32px;
+    color: white;
+    margin: 8px 0 0 30px;
+  }
+  
+  .introtext h3 {
+    font-size: 28px;
+    font-weight: 900;
+    color: #00a32e;
+    margin: 0;
+    padding: 0 40px 40px 40px;
+  }
+  .introtext p {
+    font-size: 22px;
+    font-weight: 700;
+    color: #272829;
+    margin: 0;
+  }
+  
+  /* 블러블라 소개-2 */
+  .intro02 {
+    background-color: #ffffff;
+    display: flex;
+  }
+  #intro3 {
+    text-align: left;
+    font-size: 22px;
+    color: black;
+    margin: auto;
+    padding: 30px 70px 120px 0;
+  }
+  .intro3box img {
+    width: 580px;
+    height: 530px;
+    border-radius: 30px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #282828;
+    border-radius: 30px;
+    box-shadow: 8px 8px 2px #2F2F2F;
+    margin: 0 0 0 70px;
+  }
+  .introtitles {
+    font-family: 'LeferiPoint-BlackA';
+    font-size: 43px;
+    margin: 50px 0 0 10px;
+  }
+  .intro3box{
+    display: flex;
+  }
+  .intro2 {
+    font-size: 22px;
+  }
+  .numberbox {
+    width: 70px;
+    height: 70px;
+    background-color: #39A5F7;
+    border-radius: 10px;
+    box-shadow: 4px 4px 2px #2F2F2F;
+    margin: 37px 0 0 40px;
+  }
+  .numberbox .num1 {
+    color: #fff;
+    font-size: 36px;
+    margin: 15px 0 0 26px;
+  }
+  .numberbox1 {
+    display: flex;
+    width: 640px;
+    height: 155px;
+    background-color: #fff;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #282828;
+    border-radius: 20px;
+    box-shadow: 3px 3px 2px #2F2F2F;
+    margin: 38px 0 0 10px;
+  }
+  .numberbox1 h3 {
+    color: #0151D3;
+    font-size: 27px;
+    margin: 32px 0 0 40px;
+  }
+  .numberbox1 p {
+    font-size: 22px;
+    margin: 5px 0 0 40px;
+  }
+  
+  
+  /* 라인 */
+  .line {
+    margin: 0 50px 0 50px;
+    border-radius: 10px;
+    /* height: 5px; */
+  }
+  /* 블러블라 Footer */
+  #intro4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+  }
+  .blurblaicon img {
+    width: 150px;
+    margin: 0 50px 0 20px;
+  }
+  .loadicon7 {
+    font-size: 26px;
+    margin: 0 28px 0 0;
+    color: #fff;
+  }
+  .snslink {
+    display: flex;
+  }
+  .adresslink p{
+    font-size: 18px;
+    color: #fff;
+    margin: 30px 50px 5px 0;
+  }
+  .footeradress {
+    padding: 0 50px 0 400px;
+    margin: 0 0 15px 0;
+  }
+  .footeradress p {
+    font-size: 18px;
+    color: #fff;
+    text-align: right;
+    margin: 8px;
+  }
+  

@@ -1,0 +1,184 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #292c31;
+}
+
+/* 작업내역 바디 */
+.mypageTool {
+  display: flex;
+  z-index: 1;
+  width: 100%;
+  height: 953px;
+  background-color: #e4fab5;
+}
+.ToolBody {
+  position: absolute;
+  z-index: 2;
+  width: 1585px;
+  height: 910px;
+  background-color: #fff;
+  margin: 25px 0 0 315px;
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #282828;
+}
+.ToolBodys {
+  position: absolute;
+  z-index: 3;
+  width: 1580px;
+  height: 828px;
+  background-color: #f5f5f5;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.ToolListBody {
+  display: flex;
+}
+/* 마이페이지 네비바 */
+.MypageNavbar {
+  display: flex;
+  font-size: 20px;
+  margin: 10px 0 0 1010px;
+}
+.EditorBoxBody {
+  color: #000;
+  background-color: #e4fab5;
+  border: solid 1px #000;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-decoration: none;
+  margin: 0 5px 0 5px;
+  padding: 10px 20px 10px 20px;
+}
+.PremiumBoxBody {
+  color: #000;
+  background-color: #e4fab5;
+  border: solid 1px #000;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-decoration: none;
+  margin: 0 5px 0 5px;
+  padding: 10px 20px 10px 20px;
+}
+.CustomerBoxBody {
+  color: #000;
+  background-color: #e4fab5;
+  border: solid 1px #000;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-decoration: none;
+  margin: 0 5px 0 5px;
+  padding: 10px 20px 10px 20px;
+}
+.ToolList {
+  font-size: 25px;
+  font-weight: 700;
+  color: #292c31;
+  margin: 20px 0 0 25px;
+}
+.toolhr {
+  margin: 15px 0 0 0;
+}
+.tooldate {
+  width: 165px;
+  height: 44px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Pretendard-Regular";
+  text-indent: 3px;
+  margin: 20px 0 20px 20px;
+  padding-right: 10px;
+}
+/* 전체 작엄 배경툴(스크롤바) 만들예정 */
+.ToolTotal {
+  max-height: 755px;
+  overflow-y: auto;
+  width: 1558px;
+  background-color: #f5f5f5;
+  margin: 0 0 0 13px;
+  padding: 0 0.5em;
+}
+.MosaicDate {
+  display: flex;
+  z-index: 4;
+  width: 1500px;
+  height: 56px;
+  background-color: #e4fab5;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #282828;
+  margin: 0 0 0 0;
+}
+.MosaicDates {
+  font-size: 20px;
+  margin: 16px 0 0 15px;
+}
+.MosaicFix {
+  width: 95px;
+  height: 35px;
+  background-color: #45a049;
+  font-size: 18px;
+  font-family: "Pretendard-Regular";
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #282828;
+  border-radius: 5px;
+  margin: 10px 0 0 1255px;
+  padding: 0;
+}
+.MosaicImg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 1500px;
+  background-color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #282828;
+  margin: 0 0 0 0;
+}
+.MosaicImgs {
+  position: absolute;
+  width: 275px;
+  height: 170px;
+  background-color: #979797;
+  padding: 2px 0;
+  /* margin: 15px 0 15px 20px; */
+  z-index: 4;
+}
+.ImgCheckBox {
+  display: flex;
+  position: relative;
+  width: 275px;
+  height: 170px;
+  float: left;
+  margin: 10px 11px 5px 11px;
+}
+#ImgCheck {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  margin: 10px 0 0 10px;
+  z-index: 5;
+}
+.MosaicDate2 {
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 4;
+  width: 1500px;
+  height: 56px;
+  background-color: #dddddd;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #282828;
+  margin: 0 0 0 0;
+}

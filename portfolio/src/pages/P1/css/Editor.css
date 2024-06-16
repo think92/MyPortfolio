@@ -1,0 +1,379 @@
+* {
+    box-sizing: border-box;
+  }
+  .editor-specific{
+    background-color: #000;
+    margin: 0;
+  }
+  .sec {
+    margin: 0px 10px 10px 10px;
+    display: flex;
+    height: 850px;
+  }
+  button {
+    cursor: pointer;
+  }
+  .buttons {
+    flex-grow: 0;
+  }
+  .auto {
+    background-color: #454545;
+    color: white;
+    height: 63px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 15px 30px 12px 30px;
+  }
+  .li {
+    background-color: white;
+    padding: 10px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .li2 {
+    background-color: white;
+    padding: 10px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .li p {
+    margin: 0;
+  }
+  .types {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+  }
+  .types1 {
+    display: flex;
+    align-items: center;
+  }
+  .typeshape {
+    background: none;
+    color: #000;
+    font-size: 20px;
+    border: none;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    padding: 0;
+  }
+  .types2 {
+    display: flex;
+    align-items: center;
+  }
+  .typeclear {
+    background: none;
+    color: #000;
+    font-size: 20px;
+    border: none;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin-left: 10px;
+  }
+  .slider {
+    -webkit-appearance: none; /* 기본 스타일 제거 */
+    width: 100px;
+    margin: 8px 0;
+    height: 6px; /* 트랙의 높이 */
+    background: #000; /* 트랙의 배경색을 검정색으로 설정 */
+    outline: none; /* 포커스 테두리 제거 */
+    border-radius: 20px;
+  }
+  /* 마우스 호버 시 트랙의 투명도 변경 */
+  
+  /* 슬라이더 핸들 스타일 */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* 기본 스타일 제거 */
+    appearance: none;
+    width: 20px; /* 핸들의 너비 */
+    height: 20px; /* 핸들의 높이 */
+    background: #4ce577; /* 핸들의 배경색을 초록색으로 설정 */
+    cursor: pointer; /* 커서를 포인터로 변경 */
+    border-radius: 50%; /* 핸들을 원형으로 만듦 */
+  }
+  .types p {
+    display: inline-block;
+    margin: 0;
+  }
+  .type {
+    background-color: white;
+    border: none;
+    font-size: 20px;
+    color: #000;
+  }
+  .submits {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+  }
+  .submit {
+    margin-top: 16px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border: solid 2px #4ce577;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  .submit.active {
+    background-color: #4ce577;
+    color: black;
+  }
+  .edit {
+    font-size: 25px;
+    margin-left: 20px;
+    background-color: #626262;
+    flex-shrink: 1;
+    flex-grow: 1;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* 이미지를 세로로 중앙에 위치시킵니다. */
+    overflow: hidden; /* 컨테이너를 넘는 이미지가 보이지 않도록 처리합니다. */
+  }
+  .imgEdit {
+    display: block;
+    width: 100%; /* 컨테이너 너비에 맞춥니다. */
+    height: 100%; /* 컨테이너 높이에 맞춥니다. */
+    height: auto;
+    width: auto;
+  }
+  .imgEdit img {
+    max-width: 100%; /* 이미지의 최대 너비를 컨테이너의 100%로 제한합니다. */
+    max-height: 100%; /* 이미지의 최대 높이를 컨테이너의 100%로 제한합니다. */
+    object-fit: contain; /* 비율을 유지하면서 최대 영역을 채우도록 합니다. */
+  }
+  .editor-specific #mainbar {
+    background-color: #000;
+    margin-top: 60px;
+  }
+  .editor-specific .logo img {
+    width: 160px;
+    margin-top: 5px;
+  }
+  .editor-specific a {
+    font-size: 20px;
+  }
+  .imgSaves {
+    background-color: #323131;
+    width: 250px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; /* 수정된 부분: 미디어 파일들을 그리드 형식으로 정렬 */
+    align-items: center;
+    justify-content: flex-start;
+    overflow: scroll;
+  }
+  
+  .imgsave {
+    position: relative;
+    width: 180px; /* 썸네일 너비 설정 */
+    height: 90px; /* 썸네일 높이 설정 */
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff; /* 배경색 추가 */
+    border-radius: 8px; /* 둥근 모서리 추가 */
+    overflow: hidden; /* 이미지가 컨테이너를 넘지 않도록 처리 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 약간의 그림자 추가 */
+  }
+  
+  .imgsave img,
+  .imgsave video {
+    width: 100%; /* 미디어의 너비를 컨테이너에 맞춤 */
+    height: 100%; /* 미디어의 높이를 컨테이너에 맞춤 */
+    object-fit: cover; /* 비율을 유지하면서 컨테이너를 채움 */
+  }
+  
+  .imgsave:hover .delete-icon {
+    display: block;
+  }
+  
+  .delete-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: none;
+    padding: 5px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.7); /* 투명한 배경색 추가 */
+    color: white;
+    border-radius: 50%; /* 원형 버튼으로 만듦 */
+  }
+  
+  ::-webkit-scrollbar {
+    width: 12px; /* 스크롤바의 너비 */
+  }
+  /* 스크롤바 트랙 (바탕) 스타일 */
+  ::-webkit-scrollbar-track {
+    background-color: #2b2b2b; /* 트랙의 배경색을 진한 회색으로 설정 */
+  }
+  /* 스크롤바 핸들 (움직이는 부분) 스타일 */
+  ::-webkit-scrollbar-thumb {
+    background-color: #4ce577; /* 핸들의 배경색을 초록으로 설정 */
+    border-radius: 10px; /* 핸들의 모서리를 둥글게 */
+    border: 3px solid #2b2b2b; /* 핸들 주위에 진한 회색 테두리 추가 */
+  }
+  /* 스크롤바 핸들에 마우스 호버 시 스타일 */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #888; /* 핸들의 배경색을 밝은 회색으로 변경 */
+  }
+  
+  /* Modal 스타일 */
+  .Modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+  }
+  
+  .Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  
+  /* Modal 콘텐츠 스타일 */
+  .modal-content {
+  }
+  
+  .media-preview {
+    margin: 20px 0;
+  }
+  
+  .video-preview,
+  .image-preview {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Modal 버튼 스타일 */
+  .modal-buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .btn.confirm {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .btn.cancel {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  /* 로딩 모달 스타일링 */
+  .LoadingModal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* 반투명 배경 */
+    border: none;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+  }
+  
+  .LoadingModal .modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px; /* 모달의 너비 */
+    height: 200px; /* 모달의 높이 */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  
+  .spinner {
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+    border: 6px solid rgba(255, 255, 255, 0.3);
+    border-top: 6px solid #fff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* 텍스트에 대한 추가 애니메이션 */
+  .modal-content h2 {
+    margin: 0;
+    animation: textGlow 1.5s ease-in-out infinite;
+  }
+  
+  @keyframes textGlow {
+    0%, 100% {
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+    50% {
+      text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 0.7);
+    }
+  }
+  
+  

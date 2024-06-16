@@ -1,0 +1,133 @@
+/* 기본 스타일 */
+.home-container {
+    transition: background-color 0.5s ease-in-out;
+}
+
+.home-container.fading {
+    background-color: rgba(255, 255, 255, 1); /* 밝아지기 */
+    transition: background-color 0.5s ease-in-out;
+}
+
+/* 추가한 페이드 효과 */
+.fade-in {
+    opacity: 1;
+    transition: opacity 1s ease-in-out; /* 서서히 밝아지는 효과 */
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* 서서히 어두워지는 효과 */
+}
+
+.home-section {
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 1200px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 500ms, transform 500ms;
+}
+
+.home-section.hidden {
+    display: none;
+}
+
+.home-section.visible {
+    display: flex;
+}
+
+.home-section h2 {
+    text-align: center;
+    margin: 0 0 2rem;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.about-wrapper, .skill-wrapper {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.about-wrapper.fade-in, .skill-wrapper.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about-wrapper.fade-out, .skill-wrapper.fade-out {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.projects-title {
+    font-size: 3rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.projects-title:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .home-section {
+        flex-direction: column;
+        margin: 1rem auto;
+        padding: 1.5rem;
+    }
+    .about-wrapper, .skill-wrapper {
+        width: 100%;
+    }
+    .home-section h2 {
+        font-size: 2rem;
+    }
+    .hero {
+        height: 40vh;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1.25rem;
+    }
+    .hero button {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-section {
+        margin: 0.5rem auto;
+        padding: 1rem;
+    }
+    .home-section h2 {
+        font-size: 1.75rem;
+    }
+    .hero h1 {
+        font-size: 1.75rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .hero button {
+        font-size: 0.75rem;
+        padding: 0.5rem 1rem;
+    }
+}

@@ -1,0 +1,376 @@
+.admin {
+  display: flex;
+  margin-top: 60px;
+}
+.summary {
+  background-color: #e4fab5;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  height: 955px;
+}
+.topconTainer {
+  display: flex;
+  flex-grow: 0;
+  margin: 25px;
+}
+.inqure {
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 10px;
+  width: 1010px;
+}
+.membership {
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 10px;
+  flex-grow: 1;
+  margin-left: 20px;
+}
+.subscriber {
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 10px;
+  flex-grow: 2;
+  margin: 25px;
+  margin-top: 0;
+  height: 450px; /* subscriber의 높이를 설정 */
+  display: flex;
+  flex-direction: column;
+}
+
+.inqureHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.inqureHead h1 {
+  font-size: 20px;
+}
+.inqureHead p {
+  font-weight: bold;
+}
+.Addeye{
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 16px;
+}
+.detail {
+  display: flex;
+  justify-content: center;
+}
+
+.detail table {
+  border-collapse: collapse;
+  margin: 10px 20px 20px 20px;
+  flex-grow: 1;
+}
+
+.detail th {
+  border-collapse: collapse;
+  border: 2px solid #f0f0f0;
+  padding: 8px;
+  height: 40px;
+  font-weight: 600;
+  font-size: 16px;
+}
+.adminTitle{
+  text-align: left;
+}
+.detail td {
+  border-collapse: collapse;
+  border: 2px solid #f0f0f0;
+  padding: 8px;
+  height: 40px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.detail thead th {
+  border-bottom: 2px solid #d9d9d9;
+  background-color: #cccccc;
+  height: 40px;
+}
+
+.detail tbody tr:first-child td {
+  border-top: 2px solid #f0f0f0;
+}
+
+.summaryDetail {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0 0 10px;
+  justify-content: left;
+  height: 20x;
+}
+
+.detailBorder {
+  border: solid 2px #d9d9d9;
+  width: 100%;
+}
+
+.newTitle {
+  background-color: #4ce577;
+  margin: 0;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.newCount {
+  margin: 0;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.newConutI {
+  font-size: 30px;
+  margin-right: 5px;
+  color: #4ce577;
+}
+.newConutIes{
+  font-size: 30px;
+  margin-right: 5px;
+  color: #fe7575;
+}
+
+.answerC {
+  background-color: #80caff;
+  margin: 0;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.answerCount {
+  margin: 0;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.answerConutI {
+  font-size: 30px;
+  margin-right: 5px;
+  color: #80caff;
+}
+
+.addC {
+  background-color: #fe7575;
+  margin: 0;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.addCount {
+  margin: 0;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.addConutI {
+  font-size: 30px;
+  margin-right: 5px;
+  color: #fe7575;
+}
+
+.totalUsers {
+  display: flex;
+  flex-direction: row;
+  width: 220px;
+  margin: 20px 0 10px 20px;
+  justify-content: left;
+  height: 20x;
+}
+
+.totalBorder {
+  display: flex;
+  border: solid 2px #d9d9d9;
+  width: 100%;
+  height: 48px;
+}
+
+.totalUserTitle {
+  background-color: #018cf0;
+  margin: 0;
+  height: 45px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.totalCount {
+  margin: 0 0 0 10px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.totalConutI {
+  font-size: 30px;
+  margin: 0 5px 0 15px;
+  color: #018cf0;
+}
+
+.subscriberDetail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 15px;
+  max-height: calc(100% - 60px); /* 헤더와 패딩 등을 제외한 높이 설정 */
+  overflow: hidden; /* 넘치는 콘텐츠를 숨김 */
+}
+
+.newSubscriber, .weekchars {
+  flex: 1.6; /* 월별 차트가 더 많은 공간을 차지하도록 설정 */
+  margin-right: 10px; /* 좌우 여백 추가 */
+  box-sizing: border-box;
+}
+
+.weekchars {
+  flex: 1;
+  margin-left: 10px;
+  box-sizing: border-box;
+  overflow: hidden; /* 넘치는 콘텐츠를 숨김 */
+  display: flex;
+  flex-direction: row; /* 좌우로 나란히 배치 */
+}
+
+.newSubscriber canvas{
+  height: 270px
+}
+
+
+.newSubscriberTitle {
+  display: flex;
+  align-items: center;
+}
+
+.newSubscriberShortTitle {
+  display: flex;
+  align-items: center;
+}
+
+.newSubscriberShort,
+.newSubscriberVeryShort {
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  flex: 1;
+  margin: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.weekChart {
+  height: 180px;
+  width: auto;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #e6e6e6;
+  border-radius: 8px;
+}
+
+.weekChartTotla {
+  background-color: #d1e8df;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 5px 0;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.weekChartTotla.red {
+  background-color: #f7a0a0;
+}
+
+.con,
+.conDe {
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+span.conDe {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+path {
+  font-size: 30px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+.newSubscriberVeryShortTitle {
+  display: flex;
+  align-items: center;
+}
+
+th {
+  text-align: center;
+  
+}
+
+.clickable {
+  cursor: pointer;
+  text-align: left;
+}
+
+.weekSelection {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.weekSelection label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+  color: #333;
+}
+
+.weekSelection select {
+  padding: 5px 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.weekSelection select:focus {
+  border-color: #4caf50;
+}
+
+.weekSelection select option {
+  padding: 5px;
+  font-size: 16px;
+}

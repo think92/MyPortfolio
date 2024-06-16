@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "Pretendard-Regular";
+    src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+      format("woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  section {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .mainbar-body {
+    background-color: #000;
+    margin: 0;
+    font-family: "Pretendard-Regular";
+  }
+  /* 메인 메뉴바 */
+  .mainbar-body{
+    margin-top: 60px;
+  }
+  #mainbar {
+    display: flex;
+    background-color: #292c31;
+    align-items: center;@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+section {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  margin: 0;
+  font-family: "Pretendard-Regular";
+}
+/* 메인 메뉴바 */
+#mainbar {
+  display: flex;
+  background-color: #292c31;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo img {
+  width: 210px;
+}
+#mainbar a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  padding-right: 53px;
+}
+a.alarm::before {
+  content: "\f0f3";
+  font-family: "Font Awesome 5 Free";
+}
+
+    justify-content: space-between;
+  }
+  .logo img {
+    width: 210px;
+  }
+  #mainbar a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding-right: 53px;
+  }
+  a.alarm::before {
+    content: "\f0f3";
+    font-family: "Font Awesome 5 Free";
+  }
+  

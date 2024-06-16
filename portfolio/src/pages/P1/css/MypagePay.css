@@ -1,0 +1,152 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #292c31;
+}
+/* 결재내역 바디 */
+.mypagePay {
+  display: flex;
+  z-index: 1;
+  width: 100%;
+  height: 953px;
+  background-color: #e4fab5;
+}
+.PayBody {
+  position: absolute;
+  z-index: 2;
+  width: 1585px;
+  height: 910px;
+  background-color: #fff;
+  margin: 25px 0 0 315px;
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #282828;
+}
+.PayBodys {
+  display: flex;
+  position: absolute;
+  z-index: 3;
+  width: 1580px;
+  height: 840px;
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.PayContainer {
+  width: 1580px;
+  height: 90px;
+  background-color: #fff;
+}
+.PayList {
+  font-size: 25px;
+  font-weight: 700;
+  color: #292c31;
+  margin: 20px 0 0 25px;
+}
+.Paytoolhr {
+  margin: 15px 0 0 0;
+}
+.PayDate {
+  width: 160px;
+  height: 44px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Pretendard-Regular";
+  text-indent: 10px;
+  margin: 20px 0 0 710px;
+  padding-right: 20px;
+}
+/* 결재내역 전체 */
+.PayDateBoxContainer {
+  position: absolute;
+  overflow-y: auto;
+  z-index: 3;
+  width: 1570px;
+  max-height: 776px;
+  /* height: calc(100% - 84px); */
+}
+.PayDateBox {
+  width: 1560px;
+  height: auto;
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin: 0 0 0 10px;
+}
+.PayDates {
+  font-size: 23px;
+  font-weight: 600;
+  margin: 20px 0 0 470px;
+}
+.PaySuccess {
+  width: 648px;
+  height: 74px;
+  background-color: #fff;
+  font-size: 23px;
+  color: #817c7c;
+  border: 1px solid #000;
+  border-radius: 3px;
+  padding: 22px 0 0 25px;
+  margin: 20px 0 0 465px;
+}
+.Pays {
+  font-size: 22px;
+  color: #000;
+  font-weight: 600;
+  margin: 0 0 0 445px;
+}
+.paySuccess {
+  font-size: 23px;
+  color: #817c7c;
+  padding: 22px 0 0 25px;
+  margin: 5px 0 0 460px;
+}
+.pays {
+  font-size: 20px;
+  color: #000;
+  font-weight: 600;
+  margin: 0 0 0 370px;
+}
+.PayBox {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 455px 30px 480px;
+}
+.payCash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 61px;
+  background-color: #e4fab5;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #424242;
+  font-weight: 600;
+}
+.payCheck {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 61px;
+  background-color: #e4fab5;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #424242;
+  font-weight: 600;
+}
+/* 결재내역 */
+.no-payments{
+  text-align: center;
+  font-size: 25px;
+  margin: 30px;
+  color: #45a049;
+}

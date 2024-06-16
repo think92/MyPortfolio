@@ -1,0 +1,110 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('./backImg.webp') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 0 2rem;
+    overflow: hidden;
+    position: relative;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.hero.visible {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hero.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-100%);
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    transition: opacity 0.5s ease-in-out; /* 페이드 인/아웃 효과 */
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #ddd;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hero button {
+    padding: 1em 2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #0066ff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero button:hover {
+    background-color: rgba(255, 255, 255, 1);
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px){
+    .hero {
+        height: 40vh;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1.25rem;
+    }
+    .hero button {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .hero button {
+        font-size: 0.75rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+.fade {
+    transition: opacity 0.5s ease-in-out; /* 페이드 인/아웃 효과 */
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+}

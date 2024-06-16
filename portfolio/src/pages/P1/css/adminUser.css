@@ -1,0 +1,44 @@
+.aa {
+  font-size: 30px;
+  margin: 12px 0;
+}
+
+.bb {
+  color: #018cf0;
+  font-weight: 800;
+}
+
+.styled-select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'><path fill='%23333' d='M2 0L0 2h4zm0 5L0 3h4z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px top 50%;
+  background-size: 10px;
+}
+
+.styled-select:hover {
+}
+
+.new-member {
+  color: #00ff00; /* 연두색 계열 */
+}
+
+.regular-member {
+  color: #000000; /* 기본 검정색 */
+}
+
+.premium-member {
+  color: #ff0000; /* 붉은색 계열 */
+}
+
+/* Option hover 효과를 위한 스타일 */
+.styled-select option:hover {
+  background-color: #d4fe76;
+}
