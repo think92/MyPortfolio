@@ -150,12 +150,9 @@ const AdminInquiry = () => {
 
   // 모달 열기
   const openModal = (inquiry) => {
-    if (sessionStorage.getItem("mb_role") === "A0") {
       setSelectedInquiry(inquiry);
       setModalIsOpen(true);
-    } else {
-      console.log("관리자가 아닙니다.");
-    }
+
   };
 
   // 모달 닫기

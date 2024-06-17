@@ -2,7 +2,7 @@ import React, { useEffect, useState, forwardRef } from "react";
 import './Hero.css'; 
 
 const messages = [
-    "안녕하세요!! 웹 개발자 지망생입니다!",
+    "안녕하세요!! 웹 개발자입니다!",
     "새로운 것을 만드는걸 좋아해서",
     "항상 자기개발에 힘쓰며 성장하고 있습니다.",
     "저의 포트폴리오를 통해 더 많은 이야기를 나누고 싶습니다."
